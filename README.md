@@ -335,4 +335,3 @@ Total: **~7 hours** (with bonus features)
 
 ---
 
-# 📸 Screenshots 
