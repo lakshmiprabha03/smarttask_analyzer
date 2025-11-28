@@ -1,0 +1,469 @@
+/* =====================================================
+   GLOBAL THEME
+===================================================== */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box !important;
+}
+
+body {
+    margin: 0;
+    padding: 20px;
+    font-family: "Inter", Arial, sans-serif;
+    background: linear-gradient(135deg, #24243e, #302b63, #0f0c29);
+    min-height: 100vh;
+    color: #f5f5f5;
+}
+
+.container {
+    max-width: 1400px;
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+/* =====================================================
+   DROPDOWN
+===================================================== */
+
+.dropdown {
+    width: 100%;
+    padding: 12px;
+    background: rgba(255,255,255,0.12);
+    border: 1px solid rgba(255,255,255,0.35);
+    border-radius: 8px;
+    color: #fff;
+    outline: none;
+    font-size: 15px;
+    appearance: none;
+    cursor: pointer;
+    transition: 0.25s ease;
+    margin-top: 6px;
+}
+
+.dropdown option {
+    background: #19192a;
+    padding: 10px;
+}
+
+.dropdown:hover {
+    background: rgba(255,255,255,0.18);
+}
+
+.dropdown:focus {
+    border-color: #6ab4ff;
+    box-shadow: 0 0 5px rgba(106,180,255,0.6);
+}
+
+/* =====================================================
+   STRATEGY / HOLIDAY BOX
+===================================================== */
+
+.strategy-box {
+    background: rgba(255,255,255,0.12);
+    padding: 18px;
+    border-radius: 14px;
+    margin-bottom: 20px;
+    backdrop-filter: blur(8px);
+}
+
+.strategy-box label {
+    font-weight: bold;
+    margin-bottom: 6px;
+    display: block;
+}
+
+.strategy-box textarea {
+    margin-top: 10px;
+    padding: 12px;
+    width: 100%;
+    height: 120px;
+    background: rgba(255,255,255,0.07);
+    color: white;
+    border-radius: 8px;
+    border: 1px solid rgba(255,255,255,0.3);
+}
+
+/* =====================================================
+   STANDARD CARD
+===================================================== */
+
+.card {
+    background: rgba(255,255,255,0.14);
+    backdrop-filter: blur(12px);
+    padding: 22px;
+    border-radius: 16px;
+    margin-bottom: 25px;
+    width: 100%;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.35);
+}
+
+/* =====================================================
+   FORM INPUTS
+===================================================== */
+
+.form-group {
+    margin-bottom: 14px;
+}
+
+.form-group label {
+    font-weight: 600;
+    margin-bottom: 6px;
+    display: block;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    background: rgba(255,255,255,0.07);
+    border: 1px solid rgba(255,255,255,0.35);
+    border-radius: 8px;
+    color: white;
+    font-size: 15px;
+}
+
+/* =====================================================
+   BUTTONS
+===================================================== */
+
+.btn {
+    padding: 12px 18px;
+    background: #3d5afe;
+    border: none;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.25s;
+}
+
+.btn:hover {
+    background: #2c3ed6;
+}
+
+.analyze {
+    width: 100%;
+    margin-top: 15px;
+}
+
+/* =====================================================
+   TASK LIST ROWS
+===================================================== */
+
+.task-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0,0,0,0.25);
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+
+/* =====================================================
+   RESULT CARDS
+===================================================== */
+
+.task-card {
+    background: rgba(255,255,255,0.85);
+    color: black;
+    padding: 15px;
+    margin-bottom: 12px;
+    border-radius: 10px;
+    border-left: 6px solid #304ffe;
+}
+
+/* =====================================================
+   PRIORITY COLORS
+===================================================== */
+
+.priority-high { color: #ff1744; font-weight: bold; }
+.priority-medium { color: #ffb300; font-weight: bold; }
+.priority-low { color: #00c853; font-weight: bold; }
+
+/* =====================================================
+   DRAG & DROP
+===================================================== */
+
+.drag-section {
+    background: rgba(255,255,255,0.15);
+    padding: 20px;
+    border-radius: 14px;
+}
+
+.drag-item {
+    background: #1976D2;
+    padding: 12px;
+    color: white;
+    font-weight: bold;
+    width: 230px;
+    margin: 0 auto 12px auto;
+    text-align: center;
+    border-radius: 6px;
+    cursor: grab;
+}
+
+.drop-zone {
+    border: 2px dashed #90CAF9;
+    padding: 35px;
+    text-align: center;
+    color: #0d47a1;
+    border-radius: 12px;
+}
+
+/* =====================================================
+   DASHBOARD
+===================================================== */
+
+.dashboard {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 30px;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.main {
+    width: 100%;
+}
+
+/* =====================================================
+   VISUALIZATION LAYOUT
+===================================================== */
+
+.viz-wrapper {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    gap: 20px;
+}
+
+.viz-controls {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.viz-btn {
+    width: 100%;
+    padding: 14px;
+    border-radius: 8px;
+}
+
+.viz-output {
+    width: 100%;
+}
+
+/* ================= responsive =================== */
+
+@media(max-width: 900px) {
+    .dashboard {
+        grid-template-columns: 1fr;
+    }
+
+    .viz-wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .viz-controls {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
+
+/* =====================================================
+   MODAL
+===================================================== */
+
+.modal {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.55);
+    backdrop-filter: blur(6px);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 5000;
+}
+
+.modal.show {
+    display: flex;
+}
+
+.modal-content {
+    width: 420px;
+    max-width: 92%;
+    background: white;
+    padding: 25px;
+    border-radius: 14px;
+    box-shadow: 0 6px 30px rgba(0,0,0,0.45);
+    animation: popIn 0.25s ease;
+    color: #222;
+}
+
+@keyframes popIn {
+    0% { transform: scale(0.85); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+.modal-row {
+    margin-bottom: 18px;
+    position: relative;
+}
+
+.modal-row input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+    background: #f5f5f5;
+}
+
+.modal-row label {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    font-size: 14px;
+    color: #666;
+    transition: 0.25s;
+}
+
+.modal-row input:focus + label,
+.modal-row input:not(:placeholder-shown) + label {
+    top: -8px;
+    left: 10px;
+    background: white;
+    padding: 0 4px;
+    font-size: 12px;
+    color: #3d5afe;
+}
+
+.modal-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.modal-save { background: #1E88E5 !important; }
+.modal-cancel { background: #C62828 !important; }
+
+
+/* =====================================================
+   EISENHOWER MATRIX
+===================================================== */
+
+#matrixContainer {
+    margin-top: 35px;
+    padding: 20px 10px;
+    border-radius: 16px;
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(6px);
+}
+
+#matrixContainer h2 {
+    font-size: 26px;
+    margin-bottom: 18px;
+    text-align: center;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+/* GRID 2 × 2 LAYOUT */
+.matrix-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 300px 300px;
+    gap: 25px;
+}
+
+/* EACH QUADRANT BOX */
+.matrix-box {
+    background: rgba(255,255,255,0.12);
+    border-radius: 14px;
+    padding: 16px;
+    box-shadow: 0 4px 22px rgba(0,0,0,0.25);
+    overflow-y: auto;
+    position: relative;
+    transition: 0.25s ease;
+}
+
+.matrix-box:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 28px rgba(0,0,0,0.40);
+}
+
+/* QUADRANT TITLES */
+.matrix-title {
+    font-size: 17px;
+    font-weight: 700;
+    margin-bottom: 12px;
+    text-align: center;
+    padding-bottom: 6px;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+/* CONTENT WRAPPER */
+.matrix-content {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 10px;
+}
+
+/* TASK ITEMS INSIDE MATRIX */
+.matrix-item {
+    background: rgba(255,255,255,0.18);
+    padding: 10px 12px;
+    border-radius: 8px;
+    line-height: 1.45;
+    font-size: 14px;
+    border-left: 5px solid #4FC3F7;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    transition: 0.25s ease;
+}
+
+.matrix-item:hover {
+    transform: translateX(4px);
+    background: rgba(255,255,255,0.25);
+}
+
+/* =========================
+   COLOR CODING BY QUADRANT
+========================= */
+
+#doFirst {
+    background: rgba(255, 76, 76, 0.18);
+    border: 2px solid rgba(255, 76, 76, 0.45);
+}
+#schedule {
+    background: rgba(255, 193, 7, 0.20);
+    border: 2px solid rgba(255,193,7,0.45);
+}
+#delegate {
+    background: rgba(76, 175, 80, 0.20);
+    border: 2px solid rgba(76,175,80,0.45);
+}
+#eliminate {
+    background: rgba(156, 39, 176, 0.20);
+    border: 2px solid rgba(156,39,176,0.45);
+}
+
+/* Responsive matrix collapse */
+@media (max-width: 900px) {
+    .matrix-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+}
